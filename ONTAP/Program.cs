@@ -3,17 +3,16 @@ using System;
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("Nguyen Thi Cam Nguyen - 23115053122328 - 225LTC#01\n");
+        Console.WriteLine("Chuong trinh quan ly san pham\n");
 
         ProductService service = new ProductService();
 
         service.ShowAll();
+
         service.PriceGreater500();
-        service.SortByPrice();
-        service.ThreeCheapest();
-        service.SearchProduct();
+
         service.Statistics();
 
         Console.WriteLine("\nNhan phim bat ky de thoat...");
